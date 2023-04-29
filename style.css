@@ -1,11 +1,7 @@
 html {
   line-height: 1.15;
 }
-clock {
-        font-size: 50px;
-        text-align: center;
-        margin-top: 50px;
-      }
+
  
 * {
   -webkit-box-sizing: border-box;
