@@ -1,34 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <style>
-      #clock {
-        font-size: 50px;
-        text-align: center;
-        margin-top: 50px;
-      }
-    </style>
-  </head>
-  <body onload="displayClock()">
-    <div id="clock"></div>
-    <script>
-      function displayClock() {
-        var display = document.getElementById("clock");
-        var time = new Date();
-        var hours = time.getHours();
-        var minutes = time.getMinutes();
-        var seconds = time.getSeconds();
-        var ampm = hours >= 12 ? "PM" : "AM";
-        hours = hours % 12;
-        hours = hours ? hours : 12;
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        var currentTime = hours + ":" + minutes + ":" + seconds + " " + ampm;
-        display.innerHTML = currentTime;
-        setTimeout(displayClock, 1000);
-      }
-    </script>
-
+<html lang="en"> 
 	<head>
 	  <meta charset="UTF-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
